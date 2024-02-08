@@ -52,29 +52,136 @@
                     </div>
                 </div>
                 <div class="movies">
-                    <h3 class="movies_mylist__title">Minha Lista</h3>
-                    <div class="carousel-container">
+                    <!-- Minha lista -->
+                    <h3 class="movies__mylist__title">Minha Lista</h3>
+                    <div class="carousel-container" id="myListCarousel">
                         <div class="carousel-slide">
-                            <img class="mylist__img" src="assets/img/Trilho Minha Lista.png" alt="Miniaturas de Filmes"
-                                class="thumbnail-image">
-                        </div>
-                        <h3 class="movies__top10__title">Em alta</h3>
-                        <div class="carousel-slide">
-                            <img class="top10__img" src="assets/img/Trilho Top10.png" alt="Miniaturas de Filmes"
-                                class="thumbnail-image">
-                        </div>
-                        <h3 class="movies__series1__title">Séries Estrangeiras</h3>
-                        <div class="carousel-slide">
-                            <img class="series1__img" src="assets/img/Trilho Séries parte de cima.png"
-                                alt="Miniaturas de Filmes" class="thumbnail-image">
-                        </div>
-                        <h3 class="movies__series2__title">Séries Excêntricas de humor ácido</h3>
-                        <div class="carousel-slide">
-                            <img class="series2__img" src="assets/img/Trilho Séries parte de baixo.png"
-                                alt="Miniaturas de Filmes" class="thumbnail-image">
-                        </div>
+              <div class="item">
+                <img src="assets/img/img-1-A__minha_lista.png" alt="BoJack Horseman" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-2-A__minha_lista.png" alt="Ozark" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-3-A__minha_lista.png" alt="A vizinha da mulher na janela" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-4-A_minha_lista.png" alt="Breaking bad" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-5-A_minha_lista.png" alt="The end of the f***ink world" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-6-A_minha_lista.png" alt="Boneca Russa" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-7-A_minha_lista.png" alt="Pray Away" />
+              </div>
+              <button class="fa-solid fa-angle-left" onclick="scrollLeft('myListCarousel')"></button>
+                        <button class="fa-solid fa-angle-right" onclick="scrollRight('myListCarousel')"></button>
                     </div>
-                </div>
+              </div>
+            </div>
+              <!-- top 10 -->
+              <h3 class="movies__top10__title">Em Alta</h3>
+                    <div class="carousel-container" id="top10Carousel">
+                        <div class="carousel-slide">
+              <div class="item">
+                <img src="assets/img/img-1-B__top_10.png" alt="Stranger Things" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-2-B__top_10.png" alt="The Umbrella Academy" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-3-B__top_10.png" alt="Peaky Blinders" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-4-B__top_10.png" alt="Arremessando Alto" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-5-B__top_10.png" alt="Amor e Gelato" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-6-B__top_10.png" alt="La Casa de Papel" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-7-B__top_10.png" alt="Polar" />
+              </div>
+              <button class="fa-solid fa-angle-left" onclick="scrollLeft('top10Carousel')"></button>
+              <button class="fa-solid fa-angle-right" onclick="scrollRight('top10Carousel')"></button>
+           </div>
+           </div>
+           <!-- series gringas -->
+           <h3 class="movies__top10__title">Séries Estrangeiras</h3>
+                <div class="carousel-container">
+                <div class="carousel-slide">
+              <div class="item">
+                <img src="assets/img/img-1-C__estrang.png" alt="Queen Loretta" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-2-C__estrang.png" alt="As 7 vidas de Lea" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-3-C__estrang.png" alt="Young Royals" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-4-C__estrang.png" alt="Dark" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-5-C__estrang.png" alt="Bem-Vindos Ao Eden" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-6-C__estrang.png" alt="Ozark" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-7-C__estrang.png" alt="Elise Matsunaga - Era Uma Vez Um Crime" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-8-C__estrang.png" alt="Conversando com um Serial Killer - Ted Bundy" />
+              </div>
+              <button class="fa-solid fa-angle-left" onclick="scrollLeft('foreignSeries')"></button>
+              <button class="fa-solid fa-angle-right" onclick="scrollRight('foreignSeries')"></button>
+           </div>
+           </div>
+           <!-- series de humor -->
+           <h3 class="movies__top10__title">Séries Excêntricas de humor ácido</h3>
+                <div class="carousel-container">
+                    <div class="scroll-container" id="scrollContainer">
+                <div class="carousel-slide">
+                    <button class="fa-solid fa-angle-left" onclick="scrollLeft('')"></button>
+              <div class="item">
+                <img src="assets/img/img-1-D__excentric.png" alt="BoJack Horseman" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-2-D__excentric.png" alt="Ozark" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-3-D__excentric.png" alt="A vizinha da mulher na janela" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-4-D__excentric.png" alt="Breaking bad" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-5-D__excentric.png" alt="The end of the f***ink world" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-6-D__excentric.png" alt="Boneca Russa" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-7-D__excentric.png" alt="Pray Away" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-8-D__excentric.png" alt="Pray Away" />
+                
+              </div>
+              <button class="fa-solid fa-angle-left" onclick="scrollCarousel('eccentricSeriesCarousel', 'left')"></button>
+                        <button class="fa-solid fa-angle-right" onclick="scrollCarousel('eccentricSeriesCarousel', 'right')"></button>
+          </div>
+          
+
+          
+        </div>
+          <!-- Fim do Trilho – sem animação  -->
             </main>
             <footer>
                 <div class="links-social">
@@ -161,6 +268,7 @@
                 </ul>
         </div>
         </footer>
+        <script src="script.js"></script>
         <script src="https://kit.fontawesome.com/163b3848e1.js" crossorigin="anonymous"></script>
     </div>
 </body>
