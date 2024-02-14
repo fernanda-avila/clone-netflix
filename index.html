@@ -2,60 +2,62 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/img/icone-netflix.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/img/icone-netflix.png" type="image/x-icon">
 </head>
 
 <body>
-    <div class="content-wrapper">
-        <div class="app-background">
-            <header>
-                <nav class="nav-container">
+  <div class="content-wrapper">
+    <div class="app-background">
+      <header>
+        <nav class="nav-container">
 
-                    <img class="logo-nav" src="assets/img/logo-netflix.png" alt="Logo Netflix" title="Logo Netflix">
-                    <div class="nav-links">
-                        <a href="#" class="nav-link">Início</a>
-                        <a href="#" class="nav-link">Séries</a>
-                        <a href="#" class="nav-link">Filmes</a>
-                        <a href="#" class="nav-link">Bombando</a>
-                        <a href="#" class="nav-link">Minha Lista</a>
-                    </div>
-                    <div class="nav-btns">
-                        <button class="nav-btn fa-solid fa-magnifying-glass"></button>
-                        <button class="nav-btn fa-solid fa-bell"></button>
-                        <img class="user-img" src="assets/img/user 1.png" alt="User Image" title="Avatar do usuário">
-                        <button class="fa-solid fa-caret-down"></button>
+          <img class="logo-nav" src="assets/img/logo-netflix.png" alt="Logo Netflix" title="Logo Netflix">
+          <div class="nav-links">
+            <a href="#" class="nav-link">Início</a>
+            <a href="#" class="nav-link">Séries</a>
+            <a href="#" class="nav-link">Filmes</a>
+            <a href="#" class="nav-link">Bombando</a>
+            <a href="#" class="nav-link">Minha Lista</a>
+          </div>
+          <div class="nav-btns">
+            <button class="nav-btn fa-solid fa-magnifying-glass"></button>
+            <button class="nav-btn fa-solid fa-bell"></button>
+            <img class="user-img" src="assets/img/user 1.png" alt="User Image" title="Avatar do usuário">
+            <button class="fa-solid fa-caret-down"></button>
 
-                    </div>
-                </nav>
-            </header>
-            <main>
-                <div class="banner-destaque">
-                    <div class="banner-info">
-                        <img src="assets/img/poster 1.png" alt="Poster" title="Poster" class="img-poster">
-                        <p class="banner-paragraph">Em uma penitenciária de última geração, um detendo participa de um
-                            experimento
-                            com drogas que controlam as emoções para um gênio da indústria farmacêutica.</p>
-                        <div class="banner__buttons-container">
-                            <button class="banner-button-play">
-                                <span class="fa-solid fa-play"></span>
-                                <span class="button-text">Assistir</span>
-                            </button>
-                            <button class="banner-button-info">
-                                <span class="fa-solid fa-circle-info"></span>
-                                <span class="button-text">Mais informações</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="movies">
-                    <!-- Minha lista -->
-                    <h3 class="movies__mylist__title">Minha Lista</h3>
-                    <div class="carousel-container" id="myListCarousel">
-                        <div class="carousel-slide">
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="banner-destaque">
+          <div class="banner-info">
+            <img src="assets/img/poster 1.png" alt="Poster" title="Poster" class="img-poster">
+            <p class="banner-paragraph">Em uma penitenciária de última geração, um detendo participa de um
+              experimento
+              com drogas que controlam as emoções para um gênio da indústria farmacêutica.</p>
+            <div class="banner__buttons-container">
+              <button class="banner-button-play">
+                <span class="fa-solid fa-play"></span>
+                <span class="button-text">Assistir</span>
+              </button>
+              <button class="banner-button-info">
+                <span class="fa-solid fa-circle-info"></span>
+                <span class="button-text">Mais informações</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Trilhos do main -->
+        <div class="movies">
+
+          <!-- Minha lista -->
+          <h3 class="movies__mylist__title">Minha Lista</h3>
+          <div class="carousel-container">
+            <div class="carousel-slide" id="myListCarousel">
               <div class="item">
                 <img src="assets/img/img-1-A__minha_lista.png" alt="BoJack Horseman" />
               </div>
@@ -77,200 +79,200 @@
               <div class="item">
                 <img src="assets/img/img-7-A_minha_lista.png" alt="Pray Away" />
               </div>
-              <button class="fa-solid fa-angle-left" onclick="scrollLeft('myListCarousel')"></button>
-                        <button class="fa-solid fa-angle-right" onclick="scrollRight('myListCarousel')"></button>
-                    </div>
-              </div>
+              <button class="fa-solid fa-angle-left" onclick="scrollCarousel('myListCarousel', 'left')"></button>
+              <button class="fa-solid fa-angle-right" onclick="scrollCarousel('myListCarousel', 'right')"></button>
             </div>
-              <!-- top 10 -->
-              <h3 class="movies__top10__title">Em Alta</h3>
-                    <div class="carousel-container" id="top10Carousel">
-                        <div class="carousel-slide">
-              <div class="item">
-                <img src="assets/img/img-1-B__top_10.png" alt="Stranger Things" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-2-B__top_10.png" alt="The Umbrella Academy" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-3-B__top_10.png" alt="Peaky Blinders" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-4-B__top_10.png" alt="Arremessando Alto" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-5-B__top_10.png" alt="Amor e Gelato" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-6-B__top_10.png" alt="La Casa de Papel" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-7-B__top_10.png" alt="Polar" />
-              </div>
-              <button class="fa-solid fa-angle-left" onclick="scrollLeft('top10Carousel')"></button>
-              <button class="fa-solid fa-angle-right" onclick="scrollRight('top10Carousel')"></button>
-           </div>
-           </div>
-           <!-- series gringas -->
-           <h3 class="movies__top10__title">Séries Estrangeiras</h3>
-                <div class="carousel-container">
-                <div class="carousel-slide">
-              <div class="item">
-                <img src="assets/img/img-1-C__estrang.png" alt="Queen Loretta" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-2-C__estrang.png" alt="As 7 vidas de Lea" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-3-C__estrang.png" alt="Young Royals" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-4-C__estrang.png" alt="Dark" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-5-C__estrang.png" alt="Bem-Vindos Ao Eden" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-6-C__estrang.png" alt="Ozark" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-7-C__estrang.png" alt="Elise Matsunaga - Era Uma Vez Um Crime" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-8-C__estrang.png" alt="Conversando com um Serial Killer - Ted Bundy" />
-              </div>
-              <button class="fa-solid fa-angle-left" onclick="scrollLeft('foreignSeries')"></button>
-              <button class="fa-solid fa-angle-right" onclick="scrollRight('foreignSeries')"></button>
-           </div>
-           </div>
-           <!-- series de humor -->
-           <h3 class="movies__top10__title">Séries Excêntricas de humor ácido</h3>
-                <div class="carousel-container">
-                    <div class="scroll-container" id="scrollContainer">
-                <div class="carousel-slide">
-                    <button class="fa-solid fa-angle-left" onclick="scrollLeft('')"></button>
-              <div class="item">
-                <img src="assets/img/img-1-D__excentric.png" alt="BoJack Horseman" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-2-D__excentric.png" alt="Ozark" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-3-D__excentric.png" alt="A vizinha da mulher na janela" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-4-D__excentric.png" alt="Breaking bad" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-5-D__excentric.png" alt="The end of the f***ink world" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-6-D__excentric.png" alt="Boneca Russa" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-7-D__excentric.png" alt="Pray Away" />
-              </div>
-              <div class="item">
-                <img src="assets/img/img-8-D__excentric.png" alt="Pray Away" />
-                
-              </div>
-              <button class="fa-solid fa-angle-left" onclick="scrollCarousel('eccentricSeriesCarousel', 'left')"></button>
-                        <button class="fa-solid fa-angle-right" onclick="scrollCarousel('eccentricSeriesCarousel', 'right')"></button>
           </div>
-          
-
-          
         </div>
-          <!-- Fim do Trilho – sem animação  -->
-            </main>
-            <footer>
-                <div class="links-social">
-                    <a class="fa-brands fa-facebook-f  link-social"
-                        href="https://www.facebook.com/netflixbrasil/?locale=pt_BR"></a>
-                    <a class="fa-brands fa-instagram link-social" href="https://www.instagram.com/netflixbrasil/"></a>
-                    <a class="fa-brands fa-twitter link-social" href="https://twitter.com/NetflixBrasil"
-                        title="logo Twitter"></a>
-                    <a class="fa-brands fa-youtube link-social" href="https://www.youtube.com/@NetflixBrasil"></a>
 
-                </div>
-
-                <div class="links-listas">
-                    <div class="lista-footer">
-                        <ul class="lista">
-                            <a href="#">
-                                <li>Idioma e Legendas</li>
-                            </a>
-                            <a href="#">
-                                <li>Imprensa</li>
-                            </a>
-                            <a href="">
-                                <li>Privacidade</li>
-                            </a>
-                            <a href="">
-                                <li>Entre Em Contato</li>
-                            </a>
-                        </ul>
-                        <button class="service-code">Código do Serviço</button>
-                        <p class="netflix-company">© 1997-2024 Netflix. Inc.</p>
-                    </div>
-
-
-                    <div class="lista-footer">
-                        <ul class="lista">
-                            <a href="">
-                                <li>Audiodescrição</li>
-                            </a>
-                            <a href="">
-                                <li>Relações com investidores</li>
-                            </a>
-                            <a href="">
-                                <li>Avisos legais</li>
-                            </a>
-                        </ul>
-                    </div>
-
-                    <div class="lista-footer">
-                        <ul class="lista">
-                            <a href="">
-                                <li>Centro de ajuda
-                                <li>
-                            </a>
-                            <a href="">
-                                <li>Carreiras
-                                <li>
-                            </a>
-                            <a href="">
-                                <li>Preferência de Cookies
-                                <li>
-                            </a>
-                        </ul>
-                    </div>
-
-                    <div class="lista-footer">
-                        <ul class="lista">
-                            <a href="">
-                                <li>Cartão pré-pago
-                                <li>
-                            </a>
-                            <a href="">
-                                <li>Termos de uso
-                                <li>
-                            </a>
-                            <a href="">
-                                <li>Informações corporativas
-                                <li>
-                            </a>
-                        </ul>
-                    </div>
-
-                </div>
-
-                </ul>
+        <!-- top 10 -->
+        <h3 class="movies__top10__title">Em Alta</h3>
+        <div class="carousel-container">
+          <div class="carousel-slide" id="top10Carousel">
+            <div class="item">
+              <img src="assets/img/img-1-B__top_10.png" alt="Stranger Things" />
+            </div>
+            <div class="item">
+              <img src="assets/img/img-2-B__top_10.png" alt="The Umbrella Academy" />
+            </div>
+            <div class="item">
+              <img src="assets/img/img-3-B__top_10.png" alt="Peaky Blinders" />
+            </div>
+            <div class="item">
+              <img src="assets/img/img-4-B__top_10.png" alt="Arremessando Alto" />
+            </div>
+            <div class="item">
+              <img src="assets/img/img-5-B__top_10.png" alt="Amor e Gelato" />
+            </div>
+            <div class="item">
+              <img src="assets/img/img-6-B__top_10.png" alt="La Casa de Papel" />
+            </div>
+            <div class="item">
+              <img src="assets/img/img-7-B__top_10.png" alt="Polar" />
+            </div>
+            <button class="fa-solid fa-angle-left" onclick="scrollCarousel('top10Carousel', 'left')"></button>
+            <button class="fa-solid fa-angle-right" onclick="scrollCarousel('top10Carousel', 'right')"></button>
+          </div>
         </div>
-        </footer>
-        <script src="script.js"></script>
-        <script src="https://kit.fontawesome.com/163b3848e1.js" crossorigin="anonymous"></script>
+
+        <!-- series gringas -->
+        <h3 class="movies__top10__title">Séries Estrangeiras</h3>
+        <div class="carousel-container">
+          <div class="carousel-slide" id="estrangSeriesCarousel">
+            <div class="item">
+              <img src="assets/img/img-1-C__estrang.png" alt="Queen Loretta" />
+            </div>
+            <div class="item">
+              <img src="assets/img/img-2-C__estrang.png" alt="As 7 vidas de Lea" />
+            </div>
+            <div class="item">
+              <img src="assets/img/img-3-C__estrang.png" alt="Young Royals" />
+            </div>
+            <div class="item">
+              <img src="assets/img/img-4-C__estrang.png" alt="Dark" />
+            </div>
+            <div class="item">
+              <img src="assets/img/img-5-C__estrang.png" alt="Bem-Vindos Ao Eden" />
+            </div>
+            <div class="item">
+              <img src="assets/img/img-6-C__estrang.png" alt="Ozark" />
+            </div>
+            <div class="item">
+              <img src="assets/img/img-7-C__estrang.png" alt="Elise Matsunaga - Era Uma Vez Um Crime" />
+            </div>
+            <div class="item">
+              <img src="assets/img/img-8-C__estrang.png" alt="Conversando com um Serial Killer - Ted Bundy" />
+            </div>
+            <button class="fa-solid fa-angle-left" onclick="scrollCarousel('estrangSeriesCarousel', 'left')"></button>
+            <button class="fa-solid fa-angle-right" onclick="scrollCarousel('estrangSeriesCarousel', 'right')"></button>
+          </div>
+        </div>
+
+        <!-- series de humor -->
+        <h3 class="movies__top10__title">Séries Excêntricas de humor ácido</h3>
+        <div class="carousel-container">
+          <div class="scroll-container">
+            <div class="carousel-slide" id="humorCarousel">
+              <div class="item">
+                <img src="assets/img/img-1-D__excentric.png" alt="Fyre" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-2-D__excentric.png" alt="Friends From College" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-3-D__excentric.png" alt="Riverdale" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-4-D__excentric.png" alt="Velvet Buzzsaw" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-5-D__excentric.png" alt="Amazing Interiors" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-6-D__excentric.png" alt="The Good Place" />
+              </div>
+              <div class="item">
+                <img src="assets/img/img-7-D__excentric.png" alt="Unbrakable Kim Scmidt" />
+              </div>
+
+              <button class="fa-solid fa-angle-left" onclick="scrollCarousel('humorCarousel', 'left')"></button>
+              <button class="fa-solid fa-angle-right" onclick="scrollCarousel('humorCarousel', 'right')"></button>
+            </div>
+          </div>
+          <!-- fim dos trilhos do main -->
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <div class="links-social">
+          <a class="fa-brands fa-facebook-f  link-social"
+            href="https://www.facebook.com/netflixbrasil/?locale=pt_BR"></a>
+          <a class="fa-brands fa-instagram link-social" href="https://www.instagram.com/netflixbrasil/"></a>
+          <a class="fa-brands fa-twitter link-social" href="https://twitter.com/NetflixBrasil" title="logo Twitter"></a>
+          <a class="fa-brands fa-youtube link-social" href="https://www.youtube.com/@NetflixBrasil"></a>
+
+        </div>
+
+        <div class="links-listas">
+          <div class="lista-footer">
+            <ul class="lista">
+              <a href="#">
+                <li>Idioma e Legendas</li>
+              </a>
+              <a href="#">
+                <li>Imprensa</li>
+              </a>
+              <a href="">
+                <li>Privacidade</li>
+              </a>
+              <a href="">
+                <li>Entre Em Contato</li>
+              </a>
+            </ul>
+            <button class="service-code">Código do Serviço</button>
+            <p class="netflix-company">© 1997-2024 Netflix. Inc.</p>
+          </div>
+
+
+          <div class="lista-footer">
+            <ul class="lista">
+              <a href="">
+                <li>Audiodescrição</li>
+              </a>
+              <a href="">
+                <li>Relações com investidores</li>
+              </a>
+              <a href="">
+                <li>Avisos legais</li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="lista-footer">
+            <ul class="lista">
+              <a href="">
+                <li>Centro de ajuda
+                <li>
+              </a>
+              <a href="">
+                <li>Carreiras
+                <li>
+              </a>
+              <a href="">
+                <li>Preferência de Cookies
+                <li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="lista-footer">
+            <ul class="lista">
+              <a href="">
+                <li>Cartão pré-pago
+                <li>
+              </a>
+              <a href="">
+                <li>Termos de uso
+                <li>
+              </a>
+              <a href="">
+                <li>Informações corporativas
+                <li>
+              </a>
+            </ul>
+          </div>
+
+        </div>
+
+        </ul>
     </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/163b3848e1.js" crossorigin="anonymous"></script>
+  </div>
 </body>
 
 </html>
