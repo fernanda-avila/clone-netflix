@@ -1,6 +1,7 @@
 # 🍿 Netflix Clone
 
-Projeto de clonagem da página da Netflix desenvolvido no projeto #7DaysOfCode da Alura
+Projeto de clonagem da página da Netflix desenvolvido no projeto #7DaysOfCode da Alura. 
+As lista de filmes e séries tem  sliders que funciona com os botões e também com touch.
 
 ## 🛠️ Clone construído usando:
 - HTML
